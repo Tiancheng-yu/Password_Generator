@@ -1,13 +1,12 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 0;
+    background: #f7f7f7;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    margin: 0;
+    text-align: center;
     color: #333;
 }
 
@@ -16,7 +15,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-button {
+#generate {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -28,8 +27,12 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+#generate:hover {
     background-color: #45a049;
+}
+
+.checkbox-group {
+    margin-top: 10px;
 }
 
 #password {
@@ -37,10 +40,4 @@ button:hover {
     margin-top: 20px;
     color: #0066cc;
     word-break: break-word;
-}
-
-footer {
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #666;
 }
