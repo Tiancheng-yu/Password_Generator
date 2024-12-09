@@ -11,9 +11,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Password Generator</h1>
-    <button id="generate"><i class="fas fa-key"></i> Generate Password</button>
-    <p id="password"></p>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="options">
+            <label>
+                Length: 
+                <input type="number" id="length" min="6" max="50" value="12">
+            </label>
+            <label>
+                <input type="checkbox" id="includeNumbers" checked>
+                Include Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="includeSymbols" checked>
+                Include Symbols
+            </label>
+        </div>
+        <button id="generate">Generate Password</button>
+        <p id="password"></p>
+    </div>
     <script>
        function generatePassword(length = 12, includeNumbers = true, includeSymbols = true) {
             const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
